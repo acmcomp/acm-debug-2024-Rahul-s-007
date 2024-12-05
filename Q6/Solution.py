@@ -17,7 +17,7 @@ app = Flask(__name__)
 @app.route("/data", methods=["GET"])
 def get_data():
     user = User(name="Alice", age=30)
-    return user
+    return return {"name":user.name, "age":user.age}
 
 
 if __name__ == "__main__":
