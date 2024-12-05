@@ -22,7 +22,7 @@ HTML_TEMPLATE = """
 """
 
 
-@app.route("/submit", methods=["GET"])
+@app.route("/submit", methods=["POST"])
 def submit():
     data = request.form["person_name"]
     return f"Wassgud, {data}"
